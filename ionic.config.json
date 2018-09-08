@@ -1,0 +1,7 @@
+{
+  "name": "Basinfo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
