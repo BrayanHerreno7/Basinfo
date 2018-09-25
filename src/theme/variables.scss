@@ -34,10 +34,10 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
+  primary:    #27AE60,    
+  secondary:  #16A085,
   danger:     #f53d3d,
-  light:      #f4f4f4,
+  light:      #F1C40F,
   dark:       #222
 );
 
@@ -86,3 +86,25 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+.scroll-content{
+  background-image: url(../assets/imgs/fondo.png);
+  background-size: cover;
+  color:black;
+}
+.item-md{
+  background-color: rgba(48,192,101,1) 100%;
+}
+.toolbar-background {
+  background-color: blue;
+}
+
+.toolbar-title.toolbar-title-md, 
+.toolbar-title.toolbar-title-ios, 
+.toolbar-title.toolbar-title-wp { color: white; }
+
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+  color:#27AE60 !important;
+}  
+
