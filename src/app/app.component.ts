@@ -12,17 +12,30 @@ import { LoginPage } from '../pages/login/login';
 import { MapaPage } from '../pages/mapa/mapa';
 import { NoticiasPage } from '../pages/noticias/noticias';
 
+import firebase from 'firebase';
+import { UsuarioProvider } from '../providers/usuario/usuario';
+import { BaseDatosProvider } from '../providers/base-datos/base-datos';
+
+var firebaseConfig = {  //Se encuentra al agregar una página Web en firebase
+  apiKey: "AIzaSyAhYKqLAjnjmzTuaz3MGC55-13WK-SkWBI",
+  authDomain: "basinfo-552d3.firebaseapp.com",
+  databaseURL: "https://basinfo-552d3.firebaseio.com",
+  projectId: "basinfo-552d3",
+  storageBucket: "basinfo-552d3.appspot.com",
+  messagingSenderId: "889566051333"
+};
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any;
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(private platform: Platform, private statusBar: StatusBar, private splashScreen: SplashScreen, private usuario: UsuarioProvider, private bdProvider: BaseDatosProvider) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -44,7 +57,29 @@ export class MyApp {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
-      this.splashScreen.hide();
+      firebase.initializeApp(firebaseConfig);
+      this.bdProvider.CrearBD()
+      .then(() =>{
+        this.bdProvider.ObtenerUsuarioActivo()
+        .then(() =>{
+          if (this.usuario.uid == null) {
+            this.rootPage = LoginPage;
+          } else{
+            this.rootPage = HomePage;
+            this.splashScreen.hide();
+          }
+        })
+      })
+      .catch(error =>{ 
+        console.error('initializeApp: ', error);
+      });
+      firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+          this.usuario.set(user.uid, user.displayName, user.email);
+          this.bdProvider.CrearUsuario();
+          this.rootPage = HomePage;
+        }
+      });
     });
   }
 

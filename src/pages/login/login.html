@@ -7,9 +7,6 @@
 <ion-header>
 
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
     <ion-title>Login</ion-title>
   </ion-navbar>
 
@@ -17,5 +14,6 @@
 
 
 <ion-content padding>
-
+  <p><button ion-button (click)="loginWithGoogle()">Google+</button></p>
+  <p><button ion-button (click)="loginWithFacebook()">Facebook</button></p>
 </ion-content>

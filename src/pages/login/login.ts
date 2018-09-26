@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 
+
+import { GooglePlus } from '@ionic-native/google-plus';
+
+import { AutorizacionProvider } from './../../providers/autorizacion/autorizacion';
 /**
  * Generated class for the LoginPage page.
  *
@@ -12,14 +16,25 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
+  providers: [GooglePlus],
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private authProvider: AutorizacionProvider) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+  loginWithGoogle(): void{
+    this.authProvider.googleLogin().subscribe(() => {
+    }, err =>{
+      console.log(err);
+    });  
   }
 
+  loginWithFacebook(): void{
+    this.authProvider.facebookLogin()
+    .then(() => {
+    }, err =>{
+      console.log(err);
+    });  
+  }
 }
