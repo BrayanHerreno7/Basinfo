@@ -4,7 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { ComunidadPage } from '../pages/comunidad/comunidad';
 import { ConfiguracionPage } from '../pages/configuracion/configuracion';
 import { HorariosPage } from '../pages/horarios/horarios';
@@ -15,15 +14,8 @@ import { NoticiasPage } from '../pages/noticias/noticias';
 import firebase from 'firebase';
 import { UsuarioProvider } from '../providers/usuario/usuario';
 import { BaseDatosProvider } from '../providers/base-datos/base-datos';
+import {firebaseConfig } from '../environment/constantes'
 
-var firebaseConfig = {  //Se encuentra al agregar una página Web en firebase
-  apiKey: "AIzaSyAhYKqLAjnjmzTuaz3MGC55-13WK-SkWBI",
-  authDomain: "basinfo-552d3.firebaseapp.com",
-  databaseURL: "https://basinfo-552d3.firebaseio.com",
-  projectId: "basinfo-552d3",
-  storageBucket: "basinfo-552d3.appspot.com",
-  messagingSenderId: "889566051333"
-};
 
 @Component({
   templateUrl: 'app.html'
@@ -41,11 +33,9 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
       { title: 'Comunidad', component: ComunidadPage },
       { title: 'configuracion', component: ConfiguracionPage },
       { title: 'horarios', component: HorariosPage },
-      { title: 'login', component: LoginPage },
       { title: 'mapa', component: MapaPage },
       { title: 'noticias', component: NoticiasPage }
     ];

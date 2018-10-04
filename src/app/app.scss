@@ -21,9 +21,14 @@
     color:white; 
 }
 .button-inner{
-    color: white !important;
+    color: white;
 }
 .item-md{
     background-color: white !important;
     color: #27AE60;
+}
+.customAlert{
+    .button-inner{
+        color: color($colors, primary, base);
+    }
 }

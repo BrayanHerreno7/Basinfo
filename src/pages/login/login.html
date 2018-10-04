@@ -4,16 +4,14 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>Login</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-  <p><button ion-button (click)="loginWithGoogle()">Google+</button></p>
-  <p><button ion-button (click)="loginWithFacebook()">Facebook</button></p>
+<ion-content>
+  <article>
+    <section>
+        <img src="../assets/imgs/icono.png" alt="">
+        <ul>
+          <li><button class="red" ion-button (click)="loginWithGoogle()">Google+</button></li>
+          <li><button class="blue" ion-button (click)="loginWithFacebook()">Facebook</button></li>
+        </ul>
+    </section>
+  </article>
 </ion-content>

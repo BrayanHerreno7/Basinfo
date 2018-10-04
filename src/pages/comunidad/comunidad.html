@@ -11,11 +11,18 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Comunidad</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="nuevoBlog()">
+        <ion-icon name="add-circle"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-list>
+    <ion-item *ngFor="let blog of blogs" (click)="abrirBlog(blog.key, blog.titulo)">{{blog.titulo}}</ion-item>
+  </ion-list>
 </ion-content>

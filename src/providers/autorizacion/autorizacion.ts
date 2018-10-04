@@ -2,7 +2,9 @@ import { GooglePlus } from '@ionic-native/google-plus';
 import { Facebook } from '@ionic-native/facebook';
 import { Injectable } from '@angular/core';
 import { Observable } from "rxjs/Observable";
+
 import firebase from 'firebase/app';
+import { webClientId } from '../../environment/constantes'
 
 /*
   Generated class for the AutorizacionProvider provider.
@@ -20,7 +22,7 @@ export class AutorizacionProvider {
   googleLogin() {
     return Observable.create(observer => {
       return this.googlePlus.login({
-        'webClientId': '889566051333-jc2s2lmr1jcrku1of6dr6cm0tskj4rsj.apps.googleusercontent.com', //Se encuentra en firebase Authentication -> Google
+        'webClientId': webClientId,
         'scopes': 'profile email',
       })
       .then( res => {

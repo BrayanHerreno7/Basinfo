@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { ComunidadPage } from '../pages/comunidad/comunidad';
+import { ComentariosPage } from '../pages/comentarios/comentarios';
 import { ConfiguracionPage } from '../pages/configuracion/configuracion';
 import { HorariosPage } from '../pages/horarios/horarios';
 import { LoginPage } from '../pages/login/login';
@@ -29,6 +30,7 @@ import { BaseDatosProvider } from '../providers/base-datos/base-datos';
     HomePage,
     ListPage,
     ComunidadPage,
+    ComentariosPage,
     ConfiguracionPage,
     HorariosPage,
     LoginPage,
@@ -47,6 +49,7 @@ import { BaseDatosProvider } from '../providers/base-datos/base-datos';
     HomePage,
     ListPage,
     ComunidadPage,
+    ComentariosPage,
     ConfiguracionPage,
     HorariosPage,
     LoginPage,

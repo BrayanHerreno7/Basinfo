@@ -23,7 +23,6 @@ export class InfoUsuarioPage {
   correo:string;
 
   constructor(private autorizaProvider: AutorizacionProvider, private usuario: UsuarioProvider, private bdProvider: BaseDatosProvider) {
-    this.uid = this.usuario.uid;
     this.nombre = this.usuario.nombre;
     this.correo = this.usuario.correo;
   }
