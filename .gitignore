@@ -12,24 +12,24 @@ log.txt
 .vscode/
 npm-debug.log*
 
-.idea/
-.ionic/
-.sourcemaps/
-.sass-cache/
-.tmp/
-.versions/
-coverage/
-dist/
-node_modules/
-tmp/
-temp/
-platforms/
-plugins/
-plugins/android.json
-plugins/ios.json
-www/
-$RECYCLE.BIN/
-src/environment/constantes.ts
-.DS_Store
-Thumbs.db
-UserInterfaceState.xcuserstate
+# .idea/
+# .ionic/
+# .sourcemaps/
+# .sass-cache/
+# .tmp/
+# .versions/
+# coverage/
+# dist/
+# node_modules/
+# tmp/
+# temp/
+# platforms/
+# plugins/
+# plugins/android.json
+# plugins/ios.json
+# www/
+# $RECYCLE.BIN/
+# src/environment/constantes.ts
+# .DS_Store
+# Thumbs.db
+# UserInterfaceState.xcuserstate
