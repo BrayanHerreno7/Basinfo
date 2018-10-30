@@ -1,4 +1,0 @@
-#Thu Oct 04 11:33:59 COT 2018
-base.0=/home/d13g0fd0/Documentos/Proyectos/Ionic/Basinfo/Basinfo/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
-renamed.0=classes.dex
-file.0=/home/d13g0fd0/Documentos/Proyectos/Ionic/Basinfo/Basinfo/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

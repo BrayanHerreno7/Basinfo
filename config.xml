@@ -82,14 +82,14 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-    <plugin name="cordova-plugin-googleplus" spec="^5.3.1">
+    <plugin name="cordova-plugin-googleplus" spec="^4.16.0">
         <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.889566051333-o05ti4kkmakurqadg31rcval5qll3cga" />
     </plugin>
     <plugin name="cordova-sqlite-storage" spec="^2.4.0" />
-    <plugin name="cordova-plugin-facebook4" spec="^3.0.0">
+    <plugin name="cordova-plugin-facebook4" spec="https://github.com/amritk/cordova-plugin-facebook4">
         <variable name="APP_ID" value="304535583483616" />
         <variable name="APP_NAME" value="com.basinfo" />
         <variable name="FACEBOOK_ANDROID_SDK_VERSION" value="4.36.0" />
     </plugin>
-    <engine name="android" spec="7.0.0" />
+    <engine name="android" spec="5.0.0" />
 </widget>

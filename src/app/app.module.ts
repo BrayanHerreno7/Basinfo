@@ -24,6 +24,9 @@ import { SQLite } from '@ionic-native/sqlite';
 import { UsuarioProvider } from '../providers/usuario/usuario';
 import { BaseDatosProvider } from '../providers/base-datos/base-datos';
 
+import { HttpClientModule } from '@angular/common/http';
+import { RestProvider } from '../providers/rest/rest';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -41,7 +44,8 @@ import { BaseDatosProvider } from '../providers/base-datos/base-datos';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    HttpClientModule,
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -67,7 +71,8 @@ import { BaseDatosProvider } from '../providers/base-datos/base-datos';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AutorizacionProvider,
     UsuarioProvider,
-    BaseDatosProvider
+    BaseDatosProvider,
+    RestProvider
   ]
 })
 export class AppModule {}

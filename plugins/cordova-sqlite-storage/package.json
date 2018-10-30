@@ -1,28 +1,28 @@
 {
-  "_from": "cordova-sqlite-storage",
-  "_id": "cordova-sqlite-storage@2.4.0",
+  "_from": "cordova-sqlite-storage@^2.5.0",
+  "_id": "cordova-sqlite-storage@2.5.0",
   "_inBundle": false,
-  "_integrity": "sha512-03bl2NSy7aXJJyp70EgbrDY4trGEI5fK1v3YXj6e1BQTPvA/TmZsOmM634UYJqC2hq4+hujkIZhEvGeoDaKWlQ==",
+  "_integrity": "sha512-697fgNS/ZCTXAvV6I/KpKWl4aSoDfI8MYMGTbJYQg+ztwd3dV4sF3PaWmw9Fr1H0iULpIZE64znTvAt/Atsf9Q==",
   "_location": "/cordova-sqlite-storage",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "range",
     "registry": true,
-    "raw": "cordova-sqlite-storage",
+    "raw": "cordova-sqlite-storage@^2.5.0",
     "name": "cordova-sqlite-storage",
     "escapedName": "cordova-sqlite-storage",
-    "rawSpec": "",
+    "rawSpec": "^2.5.0",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "^2.5.0"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-sqlite-storage/-/cordova-sqlite-storage-2.4.0.tgz",
-  "_shasum": "904f6bc3a6236fd802ac055c9418ae07b34020a2",
-  "_spec": "cordova-sqlite-storage",
-  "_where": "/home/d13g0fd0/Documentos/Proyectos/Ionic/Basinfo/Basinfo",
+  "_resolved": "https://registry.npmjs.org/cordova-sqlite-storage/-/cordova-sqlite-storage-2.5.0.tgz",
+  "_shasum": "0362149a3d1c58f4523bf21abfeb876ff8992e06",
+  "_spec": "cordova-sqlite-storage@^2.5.0",
+  "_where": "C:\\Users\\fredy\\Trabajo\\basinfo\\Basinfo",
   "author": {
     "name": "various"
   },
@@ -65,5 +65,5 @@
   "scripts": {
     "start": "node scripts/prepareSpec.js"
   },
-  "version": "2.4.0"
+  "version": "2.5.0"
 }

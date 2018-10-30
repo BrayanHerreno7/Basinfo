@@ -1,28 +1,25 @@
 {
-  "_from": "cordova-plugin-facebook4",
-  "_id": "cordova-plugin-facebook4@3.0.0",
+  "_from": "git+https://github.com/amritk/cordova-plugin-facebook4.git",
+  "_id": "cordova-plugin-facebook4@3.1.0",
   "_inBundle": false,
-  "_integrity": "sha512-XykvR0xNX7DiBWZlKoETir1mWYFugwoRBSc1No/TVOxox3Ocb8MPHdGlFEV7NpKjXMX9wE6AFhrVPvlrhFYm+g==",
+  "_integrity": "sha1-vh6kCRUWjeumD5crYtkq+C4TA4c=",
   "_location": "/cordova-plugin-facebook4",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "cordova-plugin-facebook4",
-    "name": "cordova-plugin-facebook4",
-    "escapedName": "cordova-plugin-facebook4",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+    "type": "git",
+    "raw": "git+https://github.com/amritk/cordova-plugin-facebook4.git",
+    "rawSpec": "git+https://github.com/amritk/cordova-plugin-facebook4.git",
+    "saveSpec": "git+https://github.com/amritk/cordova-plugin-facebook4.git",
+    "fetchSpec": "https://github.com/amritk/cordova-plugin-facebook4.git",
+    "gitCommittish": "master"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-facebook4/-/cordova-plugin-facebook4-3.0.0.tgz",
-  "_shasum": "166b1e3cb53173abe52f0e03a5db7196f669839b",
-  "_spec": "cordova-plugin-facebook4",
-  "_where": "/home/d13g0fd0/Documentos/Proyectos/Ionic/Basinfo/Basinfo",
+  "_resolved": "git+https://github.com/amritk/cordova-plugin-facebook4.git#97d0422b25e93e761fc6196bc863cffe37a5960e",
+  "_spec": "git+https://github.com/amritk/cordova-plugin-facebook4.git",
+  "_where": "C:\\Users\\fredy\\Trabajo\\basinfo\\Basinfo",
   "bugs": {
     "url": "https://github.com/jeduan/cordova-plugin-facebook4/issues"
   },
@@ -55,5 +52,5 @@
     "type": "git",
     "url": "git+https://github.com/jeduan/cordova-plugin-facebook4.git"
   },
-  "version": "3.0.0"
+  "version": "3.1.0"
 }

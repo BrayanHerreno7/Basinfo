@@ -17,101 +17,27 @@
 
 
 <ion-content padding>
-  <!--
-    Cards for noticies
-  -->
-  <div *ngIf="noticias1 == true">
-    <ion-card (click)="open('www.ciudadlimpia.com.co')">
-      <img src="http://www.ciudadlimpia.com.co/index_files/lc-1.png" 
-      style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
-      <ion-card-content>
-        <ion-card-title>
-            Ciudad Limpia
-          </ion-card-title>
-        <p>
-            <strong>Ciudad Limpia Bogotá S.A. E.S.P</strong>  es una empresa de la organización FANALCA, 
-            que se destaca por su acreditada experiencia en el manejo integral de residuos sólidos. 
-            Desde hace más de 28 años ha estado presente en varias ciudades de Colombia como Cartagena, 
-            Tunja y Yumbo en Barcelona, Guacara y Valencia en Venezuela, Chennai y Ambattur en India y en Colón Panamá.<br><br>
-  
-            Actualmente prestamos el servicio en Bogotá en las localidades de Kennedy y Fontibón, en Cali en 5 
-            comunas y 10 corregimientos que comprenden el centro y oeste del municipio, en la ciudad de Neiva 
-            en el departamento del Huila y también en las ciudades de Santiago, Osorno y Punta Arena en Chile.
-        </p>
-      </ion-card-content>
-    </ion-card>
-  
-    <ion-card (click)="open('arealimpia.com.co')">
-      <img src="https://arealimpia.com.co/wp-content/uploads/2018/02/logo.png" 
-      style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
-      <ion-card-content>
-        <ion-card-title>
-            Areá Limpia
-          </ion-card-title>
-        <p>
-            Área Limpia Distrito Capital SAS ESP contribuye con el mejoramiento del entorno urbano y 
-            las condiciones de habitabilidad de las comunidades a través de la prestación de servicios 
-            públicos domiciliarios de aseo urbano con criterios de eficiencia y sostenibilidad.
-        </p>
-      </ion-card-content>
-    </ion-card>
-  
-    <ion-card (click)="open('www.bogotalimpia.com')">
-      <img src="http://www.bogotalimpia.com/wp-content/uploads/2018/02/logo_A.png" 
-      style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
-      <ion-card-content>
-        <ion-card-title>
-            Bogotá Limpia
-          </ion-card-title>
-        <p>
-            <strong>BOGOTÁ LIMPIA S.A.S. ESP.</strong> se constituyó el 10 de enero de 2018. Bogotá Limpia tiene como 
-            objeto social único la celebración, ejecución y liquidación del contrato de concesión que 
-            resultó adjudicado dentro de la Licitación Pública UAESP No. 02 de 2017, el día 3 de enero de 2018, 
-            para la prestación del servicio público domiciliario de aseo en sus componentes de recolección, barrido, 
-            limpieza de vías y áreas públicas, corte de césped, poda de árboles en áreas públicas y transporte de los 
-            residuos al sitio de disposición final y todas las actividades de orden financiero, comercial, técnico, operativo, 
-            educativo y administrativo que ello conlleva, para el área adjudicada dentro de la Licitación Pública UAESP No. 02 de 2017.
-        </p>
-      </ion-card-content>
-    </ion-card>
-    
-    <ion-card (click)="open('www.ciudadlimpia.com.co')">
-      <img src="" 
-      style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
-      <ion-card-content>
-        <ion-card-title>
-            LIME
-          </ion-card-title>
-        <p>
-            <strong>LIME</strong>  es una empresa de dmsladkls dskadksa dksañdkñsa mdksadklsa.
-        </p>
-      </ion-card-content>
-    </ion-card>
-  
-        <!--ion-card>
-            <iframe width="420" height="315" src="http://www.ciudadlimpia.com.co/site/" frameborder="0" allowfullscreen></iframe>
-        </ion-card-->
-  </div>
+ 
 
+  <h1>Noticias relevantes</h1>
 
-  <!--
-    Si la condicion no se cumple es porque ya ingresaron a un area especifica 
-  -->
-  <div *ngIf="noticias1 == false">
-    <h1>Noticias</h1>
+  <div *ngFor="let notice of notices.obj">
+
     <ion-card>
-        <img src="http://www.bogotalimpia.com/wp-content/uploads/2018/02/logo_A.png" 
-        style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
-        <ion-card-content>
-          <ion-card-title>
-              LIME
-            </ion-card-title>
-          <p>
-              <strong>LIME</strong>  es una empresa de dmsladkls dskadksa dksañdkñsa mdksadklsa.
-          </p>
-        </ion-card-content>
-      </ion-card>
+      <img src="{{ notice.garbageCompany.icon }}" style="width: 200px;margin:10px;padding: 10px;"/>
+      <ion-card-content>
+        <ion-card-title>
+          {{ notice.title }}
+          </ion-card-title>
+        <p>
+          {{ notice.body }}
+        </p>
+      </ion-card-content>
+      <button  style="background: black;color:white;padding:10px;margin:10px;">Ir a noticia</button>
+    </ion-card>
+
   </div>
+  
   
 
 </ion-content>

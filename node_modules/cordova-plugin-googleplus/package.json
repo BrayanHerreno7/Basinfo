@@ -1,28 +1,28 @@
 {
-  "_from": "cordova-plugin-googleplus",
-  "_id": "cordova-plugin-googleplus@5.3.1",
+  "_from": "cordova-plugin-googleplus@^5.3.2",
+  "_id": "cordova-plugin-googleplus@5.3.2",
   "_inBundle": false,
-  "_integrity": "sha512-I/5K31AU92ANmDRXNNxCIYUoiwwkiLLUe1OjlmPP8WIDrF4teylaEcyU6WvbCvzkvnf7Hpc4ttvYO+pFPGPn6A==",
+  "_integrity": "sha512-kpaNypLOjbZtexJ4J612uwAJaeD6BfWXqHOwIP35gHum4ipqJkE3NkE7eUyEJLvxk626rTC39ZLZHsUszPBe8w==",
   "_location": "/cordova-plugin-googleplus",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "range",
     "registry": true,
-    "raw": "cordova-plugin-googleplus",
+    "raw": "cordova-plugin-googleplus@^5.3.2",
     "name": "cordova-plugin-googleplus",
     "escapedName": "cordova-plugin-googleplus",
-    "rawSpec": "",
+    "rawSpec": "^5.3.2",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "^5.3.2"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-googleplus/-/cordova-plugin-googleplus-5.3.1.tgz",
-  "_shasum": "fcea9e06b838c7e481c2692232382389d34f4204",
-  "_spec": "cordova-plugin-googleplus",
-  "_where": "/home/d13g0fd0/Documentos/Proyectos/Ionic/Basinfo/Basinfo",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-googleplus/-/cordova-plugin-googleplus-5.3.2.tgz",
+  "_shasum": "83bc80dc2b6e58c991e093661af655c52b9fa385",
+  "_spec": "cordova-plugin-googleplus@^5.3.2",
+  "_where": "C:\\Users\\fredy\\Trabajo\\basinfo\\Basinfo",
   "bundleDependencies": false,
   "cordova_name": "Google SignIn",
   "deprecated": false,
@@ -56,5 +56,5 @@
     "ios"
   ],
   "repo": "https://github.com/EddyVerbruggen/cordova-plugin-googleplus.git",
-  "version": "5.3.1"
+  "version": "5.3.2"
 }

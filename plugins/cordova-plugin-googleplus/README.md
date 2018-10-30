@@ -90,6 +90,10 @@ $ keytool -exportcert -keystore <path-to-debug-or-production-keystore> -list -v 
 ```
 Login on Android will use the accounts signed in on the user's device.
 
+#### Integrating Google Play Services
+
+To set up Google Play Services version, you can use PLAY_SERVICES_VERSION parameter (with 11.8.0 value by default). It is useful in order to avoid conflicts with another plugins which use any other different version of Google Play Service, because they MUST be the same version.
+
 #### Publishing your app in Google Play Store
 
 Google re-signs your app with a different certificate when you publish it in the Play Store. Once your app is published, copy the SHA-1 fingerprint of the "App signing certificate", found in the "App signing" section under "Release Management", in [Google Play Console](https://play.google.com/apps/publish/). Paste this fingerprint in the Release OAuth client ID in [Google Credentials Manager](https://console.developers.google.com/apis/credentials).
@@ -302,6 +306,8 @@ As stated before, this plugin is all about user authentication and identity, so 
 - A: Make sure you are using a Virtual Device running with a **Google APIs target and/or a Google APIs CPU**!
 
 ## 10. Changelog
+- 5.3.2: Allow override of Play services version via `PLAY_SERVICES_VERSION`.
+- 5.3.1: Capacitor compatibility.
 - 5.3.0: Browser platform added.
 - 5.0.3: Added the convenience method `getSigningCertificateFingerprint` to retrieve the Android cert fingerprint which is required in the Google Developer Console.
 - 5.0.2: Require linking against `SafariServices` and `CoreText` frameworks on iOS as per Google's recommendation. Added `loginHint` on iOS.

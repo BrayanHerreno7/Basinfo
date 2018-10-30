@@ -1,10 +1,11 @@
 import { GooglePlus } from '@ionic-native/google-plus';
 import { Facebook } from '@ionic-native/facebook';
 import { Injectable } from '@angular/core';
-import { Observable } from "rxjs/Observable";
+import { Observable } from 'rxjs/Observable';
 
 import firebase from 'firebase/app';
-import { webClientId } from '../../environment/constantes'
+
+import { webClientId } from '../../environment/constantes';
 
 /*
   Generated class for the AutorizacionProvider provider.

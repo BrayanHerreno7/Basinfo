@@ -14,16 +14,16 @@ npm-debug.log*
 
 # .idea/
 # .ionic/
-# .sourcemaps/
+.sourcemaps/
 # .sass-cache/
 # .tmp/
 # .versions/
 # coverage/
 # dist/
-# node_modules/
+node_modules/
 # tmp/
 # temp/
-# platforms/
+platforms/
 # plugins/
 # plugins/android.json
 # plugins/ios.json
